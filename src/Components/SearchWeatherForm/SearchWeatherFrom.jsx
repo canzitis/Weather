@@ -37,7 +37,7 @@ const SearchWeatherForm = (props) => {
             />
             <div>
               <button className={s.searchBtn} type="submit">
-                Search
+                Поиск
               </button>
             </div>
           </div>
