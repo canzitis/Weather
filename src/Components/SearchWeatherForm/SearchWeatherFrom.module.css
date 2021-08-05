@@ -1,0 +1,18 @@
+.searchFromInput{
+    font-size: 20px;
+    position: absolute;
+    width: 399px;
+    height: 52px;
+    left: 201px;
+    top: 111px;
+  }
+
+.searchBtn {
+    position: absolute;
+    width: 100px;
+    height: 58px;
+    left: 508px;
+    top: 111px;
+
+    background-color: red;
+}

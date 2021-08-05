@@ -1,6 +1,53 @@
 .searchWeather{
-  width:100%;
+  position: relative;
+  margin: 0 auto;
+  width:800px;
   height: 100%;
-  background-image: url('../../img/Bitmap.png');
-  background-repeat: no-repeat;
+  background-color:white;
+}
+
+.weatherLogo{
+  font-family: '../../Fonts/GowunDodum-Regular.ttf';
+  font-size: 25px;
+  color: white;
+  position: absolute;
+  left: 350px;
+  top: 40px;
+}
+
+.clouds1{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 45px;
+}
+
+.clouds2{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 350px;
+  top: 10px;
+}
+
+.clouds3{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 670px;
+  top: 80px;
+}
+
+
+.heroDecorBgImg{
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.heroMascotImg{
+  position: absolute;
+  left: 304px;
+  top: 220px;
 }

@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Route path="/searchWeater" render={() => <SearchWeather />} />
-      <Route path="/weater" render={() => <SearchWeather />} />
+      {/* <Route path="/weater" render={() => <SearchWeather />} /> */}
     </div>
   );
 }
