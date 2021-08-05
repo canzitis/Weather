@@ -1,18 +1,73 @@
 .searchFromInput{
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
-    width: 399px;
-    height: 52px;
-    left: 201px;
-    top: 111px;
+    width: 340px;
+    height: 42px;
+    left: 160px;
+    top: 120px;
   }
 
 .searchBtn {
     position: absolute;
     width: 100px;
-    height: 58px;
+    height: 49px;
     left: 508px;
-    top: 111px;
+    top: 119px;
 
     background-color: red;
 }
+
+.searchBtn:hover{
+  cursor: pointer;
+  }
+
+
+@media(max-width: 420px){
+  .searchFromInput{
+    font-size: 20px;
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 80px;
+    top: 50px;
+  }
+
+  .searchBtn {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    left: 280px;
+    top: 50px;
+
+    background-color: red;
+  }
+
+}
+
+
+@media(max-width:370px){
+
+  .searchFromInput{
+    font-size: 15px;
+    position: absolute;
+    width: 180px;
+    height: 20px;
+    left: 65px;
+    top: 50px;
+  }
+
+  .searchBtn {
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    left: 240px;
+    top: 50px;
+
+    background-color: red;
+  }
+}
+
+
+

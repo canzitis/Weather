@@ -1,8 +1,9 @@
+body{
+  background-color:rgb(226, 226, 226);
+}
 .App {
   text-align: center;
-   background-color:rgb(226, 226, 226);
-   height: 720px;
-   padding: 20px 0 20px 0;
+   
 }
 
 .App-logo {
