@@ -6,6 +6,9 @@ import SearchWeatherForm from "../SearchWeatherForm/SearchWeatherFrom";
 import clouds1 from "../../img/clouds1.png";
 import clouds2 from "../../img/clouds2.png";
 import clouds3 from "../../img/clouds3.png";
+import vkImg from "../../img/vk.png";
+import gitImg from "../../img/github.png";
+import instaImg from "../../img/instagram.png";
 
 const SearchWeather = () => {
   return (
@@ -17,6 +20,17 @@ const SearchWeather = () => {
       <img className={s.clouds3} id="clouds3" src={clouds3} alt="" />
       <SearchWeatherForm />
       <img className={s.heroMascotImg} src={heroMascot} alt="" />
+      <div className={s.contacts}>
+        <a href="https://vk.com/canzit">
+          <img src={vkImg} alt="" />
+        </a>
+        <a href="https://github.com/canzitis">
+          <img src={gitImg} alt="" />
+        </a>
+        <a href="https://www.instagram.com/canzit/">
+          <img src={instaImg} alt="" />
+        </a>
+      </div>
     </div>
   );
 };
