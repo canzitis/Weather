@@ -1,9 +1,14 @@
+import {
+    weatherApi
+} from "../api/api"
+
 const SET_WEATHER = 'SET_WEATHER'
 
 //Создает свой state
 
 const instalState = {
-    weather: null
+    weather: null,
+    loadingWeather: false
 }
 
 
@@ -15,10 +20,33 @@ const weatherReducer = (state = instalState, action) => {
             return {
                 ...state,
                 weather: action.weather,
+                    loadingWeather: true
             }
             default:
                 return state
     }
+}
+
+
+export const setStartIndex = (weather) => {
+    debugger
+    return {
+        type: SET_WEATHER,
+        weather,
+    }
+}
+
+
+export const getWeather = (searchCity) => {
+    return async (dispatch) => {
+        const data = await weatherApi.getweather(searchCity)
+        if (data.status === 200) {
+            debugger;
+            dispatch(setStartIndex(data.data))
+
+        }
+    }
+
 }
 
 

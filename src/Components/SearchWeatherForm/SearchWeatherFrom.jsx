@@ -4,14 +4,14 @@ import s from "./SearchWeatherFrom.module.css";
 const SearchWeatherForm = (props) => {
   const validateTextPost = (values) => {
     const errors = {};
-    if (!values.searchText || values.searchText.length > 200) {
+    if (!values.searchCity || values.searchCity.length > 200) {
       errors.text = "Длина не может быть меньше 1 символа или больше 200";
     }
     return errors;
   };
 
   const addSearch = (values) => {
-    props.getBooks(values.startIndex);
+    props.getWeather(values.searchCity);
   };
 
   return (
@@ -19,7 +19,7 @@ const SearchWeatherForm = (props) => {
       validate={validateTextPost}
       className={s.fomBlock}
       initialValues={{
-        searchText: "",
+        searchCity: "",
       }}
       onSubmit={addSearch}
     >
@@ -30,10 +30,10 @@ const SearchWeatherForm = (props) => {
               placeholder="Введите город"
               className={s.searchFromInput}
               type="text"
-              name="searchText"
+              name="searchCity"
               onChange={handleChange}
               onBlur={handleBlur}
-              value={values.email}
+              values={values.searchCity}
             />
             <div>
               <button className={s.searchBtn} type="submit">

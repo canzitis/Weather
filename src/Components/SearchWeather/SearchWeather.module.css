@@ -35,7 +35,7 @@
   position: absolute;
   left: 560px;
   top: 10px;
-}
+ }
 
 .clouds3{
   width: 80px;
@@ -62,53 +62,55 @@
   top: 340px;
 }
 
-.a1{
+.leaflet1{
   position: absolute;
-  left: 100px;
+  left: 0px;
   top: 0px;
   z-index: 1;
 }
 
-.a2{
+.leaflet2{
   position: absolute;
   z-index: 4;
-  left: 1000px;
+  left: 900px;
   top: 700px;
 }
 
-.a3{ 
+.leaflet3{ 
   position: absolute;
   z-index: 4;
-  left: 80px;
+  left: 0;
   top: 320px;
 }
 
-.a4{
+.leaflet4{
   position: absolute;
-  left: 1200px;
+  left: 1150px;
   top: 400px;
 }
-.a5{
+.leaflet5{
   position: absolute;
-  left: 100px;
+  left: 0;
   top: 450px;
 }
 
-.a6{
+.leaflet6{
+  width: 500px;
   position: absolute;
-  left: 1200px;
+  left: 1350px;
   top: 0px;
 }
-
 
 .contacts{
   position: absolute;
   left: 550px;
   top: 830px;
 }
+
 .contacts a{
   padding: 5px;
 }
+
 .contacts img{
   width: 23px;
 }

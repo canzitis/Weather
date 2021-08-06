@@ -10,7 +10,7 @@ import vkImg from "../../img/vk.png";
 import gitImg from "../../img/github.png";
 import instaImg from "../../img/instagram.png";
 
-const SearchWeather = () => {
+const SearchWeather = (props) => {
   return (
     <div className={s.searchWeather}>
       <img className={s.heroDecorBgImg} src={heroDecorBg} alt="" />
@@ -18,16 +18,16 @@ const SearchWeather = () => {
       <img className={s.clouds1} id="clouds1" src={clouds1} alt="" />
       <img className={s.clouds2} src={clouds2} alt="" />
       <img className={s.clouds3} id="clouds3" src={clouds3} alt="" />
-      <SearchWeatherForm />
+      <SearchWeatherForm {...props} />
       <img className={s.heroMascotImg} src={heroMascot} alt="" />
       <div className={s.contacts}>
-        <a href="https://vk.com/canzit">
+        <a target="blank" href="https://vk.com/canzit">
           <img src={vkImg} alt="" />
         </a>
-        <a href="https://github.com/canzitis">
+        <a target="blank" href="https://github.com/canzitis">
           <img src={gitImg} alt="" />
         </a>
-        <a href="https://www.instagram.com/canzit/">
+        <a target="blank" href="https://www.instagram.com/canzit/">
           <img src={instaImg} alt="" />
         </a>
       </div>

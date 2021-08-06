@@ -7,10 +7,9 @@ const instanceAPI = {
 
 export const weatherApi = {
     getweather(city) {
+        debugger;
         return axios.get(`${instanceAPI.baseURL}?q=${city}&units=metric&appid=${instanceAPI.APIKEY}`).then(response => {
             return response
         })
     },
-
-
 }

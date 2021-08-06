@@ -10,7 +10,7 @@ import weatherReducer from "./weather-reducer";
 
 
 let reducers = combineReducers({
-    weatherReducer: weatherReducer
+    weatherReducerPage: weatherReducer,
 });
 
 let store = createStore(reducers, applyMiddleware(thunkMiddleware));
