@@ -117,6 +117,7 @@
 
 
 @media(max-width:420px){
+  
   .searchWeather{
     position: absolute;
     margin: 0 auto;
@@ -170,8 +171,18 @@
   
   .heroMascotImg{
     position: absolute;
-    left: 60px;
+    left: 55px;
     top: 120px;
+  }
+
+  .contacts{
+    position: absolute;
+    left: 160px;
+    top: 680px;
+  }
+
+  .leaflet1, .leaflet2, .leaflet3, .leaflet4, .leaflet5, .leaflet6{
+    display: none;
   }
 }
 
@@ -233,6 +244,17 @@
     left: 74px;
     top: 100px;
   }
+
+  .contacts{
+    position: absolute;
+    left: 135px;
+    top: 670px;
+  }
+
+  .leaflet1, .leaflet2, .leaflet3, .leaflet4, .leaflet5, .leaflet6{
+    display: none;
+  }
+  
 }
 
 

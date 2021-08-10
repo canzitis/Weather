@@ -1,4 +1,5 @@
 import { Formik } from "formik";
+import { NavLink } from "react-router-dom";
 import s from "./SearchWeatherFrom.module.css";
 
 const SearchWeatherForm = (props) => {
@@ -35,7 +36,7 @@ const SearchWeatherForm = (props) => {
               onBlur={handleBlur}
               values={values.searchCity}
             />
-            <div>
+            <div className ={s.searchBtnBlock}>
               <button className={s.searchBtn} type="submit">
                 Поиск
               </button>

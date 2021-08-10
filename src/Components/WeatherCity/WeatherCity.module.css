@@ -3,24 +3,43 @@
 
     width:1200px;
     height: 820px;
+
+    padding: 20px;
     margin:  0 auto;
-    background-image: url('../../img/bitmap.png');
+    background-image: url('../../img/Bitmap.png');
     background-repeat: no-repeat;
     background-size: 100%;
     color: white;
     
+    border: solid white 1px;
     border-radius: 50px;
     box-shadow:
-    0 -30px 0 -10px rgb(27 68 134),
-    30px 0 0 -10px darkturquoise,
-    0 30px 0 -10px rgb(231, 177, 106),
-    -30px 0 0 -10px rgb(53, 137, 170);
+    0 -30px 20px -10px rgb(41 84 150),
+    30px 0 20px -10px  #8480a0,
+    0 30px 20px -10px rgb(180 107 87),
+    -30px 0 20px -10px rgb(133 156 203)
 }
 
+
+.backImg{
+    position: fixed;
+    left: 940px;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.backImg:hover{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
 
 .city h4{
     font-size: 40px;
     color: white;
+    margin: 0;
+    margin-top: 90px;
     margin-bottom: 20px;
 }
 
@@ -29,24 +48,153 @@
     height: 60px;
 }
 
+.cloudHandler{
+    margin: 0 auto;
+    width: 300px;
+    border-bottom: solid white 1px;
+}
+
+.cloudHandler h5{
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .temp{
-margin: 0 auto;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 .temp h4{
     font-family: '../../Fonts/OpenSans-Light.ttf';
-    font-weight: 300;
+    margin: 0;
+    font-weight:100;
     font-size: 45px;
 }
 
 .temp h5{
     font-family: '../../Fonts/OpenSans-Light.ttf';
     font-weight: 300;
+    margin-bottom:  15px;
     font-size: 25px;
+    margin-top: 20px;
+}
+
+.tempFlexBox{
+    display: flex;
+    justify-content: center;
+}
+
+.termometrImg{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 45px;
+    height: 45px;       
+}
+
+
+.mainInfo{
+    display: flex;
+    justify-content:center;
+}
+
+.mainInfo h5{
+    padding-right:60px; 
+    font-size: 22px;
 }
 
 .border{
     margin: 0 auto;
     width: 50%;
     border: solid 0.5px white;
+    margin-bottom: 50px;
 }
+
+
+
+@media(max-width: 420px){
+    .weatherCity{
+        font-family: MonteCarlo, cursive;
+    
+        width:400px;
+        height: 700px;
+    
+        padding: 5px;
+        margin:  0 auto;
+        background-image: url('../../img/Bitmap.png');
+        background-size: 300%;
+        background-repeat: no-repeat;
+       
+        color: white;
+        
+        border: solid white 1px;
+        border-radius: 0;
+        box-shadow:none;
+    }
+
+    .backImg{
+        position: fixed;
+        left: 190px;
+        margin-top: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    
+    .mainInfo{
+         display: flex;
+         justify-content:center;
+    }   
+    
+    .mainInfo h5{
+        padding-right:40px; 
+        font-size: 22px;
+    }
+
+  }
+  
+  
+  @media(max-width:370px){
+  
+    .weatherCity{
+        font-family: MonteCarlo, cursive;
+    
+        width:99%;
+        height: 100%;
+    
+        padding: 0px;
+        margin:  0 auto;
+        background-image: url('../../img/Bitmap.png');
+        background-size: 300%;
+        background-repeat: no-repeat;
+       
+        color: white;
+        
+        border: solid white 1px;
+        border-radius: 0;
+        box-shadow:none;
+    }
+
+    .backImg{
+        position: fixed;
+        left: 164px;
+        margin-top: 30px;
+        width: 30px;
+        height: 30px;
+    }
+       
+    
+    .mainInfo{
+        display: flex;
+        justify-content:space-around;
+    }   
+    
+    .mainInfo h5{
+        padding-right:20px; 
+        font-size: 22px;
+    }
+
+  }
+  
+  
+  
