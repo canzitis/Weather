@@ -17,6 +17,7 @@ const mapStateToProps = (state) => {
     loadingWeather: state.weatherReducerPage.loadingWeather,
   };
 };
+
 export default connect(mapStateToProps, { clearloadingWeather })(
   WeatherCityContainer
 );

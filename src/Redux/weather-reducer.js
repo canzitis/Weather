@@ -4,12 +4,15 @@ import {
 
 const SET_WEATHER = 'SET_WEATHER'
 const CLEAR_LOADING_WEATHER = "CLEAR_LOADING_WEATHER"
+const ERROR_SEARCH = "ERROR_SEARCH"
 
 //Создает свой state
 
 const instalState = {
     weather: null,
-    loadingWeather: false
+    loadingWeather: false,
+    errorSearch: false,
+    textErorSearch: null
 }
 
 
@@ -29,23 +32,34 @@ const weatherReducer = (state = instalState, action) => {
                     ...state,
                     loadingWeather: false
                 }
-                default:
-                    return state
+                case ERROR_SEARCH:
+                    return {
+                        ...state,
+                        errorSearch: true,
+                            textErorSearch: 'Город не найден'
+                    }
+                    default:
+                        return state
     }
 }
 
 
 export const setStartIndex = (weather) => {
-    debugger
     return {
         type: SET_WEATHER,
         weather,
     }
 }
+
 export const setClearloadingWeather = () => {
-    debugger
     return {
         type: CLEAR_LOADING_WEATHER
+    }
+}
+
+export const setErrorSearch = () => {
+    return {
+        type: ERROR_SEARCH
     }
 }
 
@@ -53,20 +67,24 @@ export const setClearloadingWeather = () => {
 export const getWeather = (searchCity) => {
     return async (dispatch) => {
         const data = await weatherApi.getweather(searchCity)
+        debugger
         if (data.status === 200) {
             dispatch(setStartIndex(data.data))
-
+        } else if (data.response.data.message === 'city not found') {
+            dispatch(setErrorSearch())
         }
     }
 
 }
 
 export const clearloadingWeather = () => {
+    debugger
     return (dispatch) => {
         dispatch(setClearloadingWeather())
     }
-
 }
+
+
 
 
 

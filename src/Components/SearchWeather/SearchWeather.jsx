@@ -2,7 +2,7 @@ import s from "./SearchWeather.module.css";
 import React from "react";
 import heroDecorBg from "../../img/hero-decor-bg.png";
 import heroMascot from "../../img/hero-mascot.png";
-import SearchWeatherForm from "../SearchWeatherForm/SearchWeatherFrom";
+import SearchWeatherForm from "../SearchWeatherForm/SearchWeatherForm.jsx";
 import clouds1 from "../../img/clouds1.png";
 import clouds2 from "../../img/clouds2.png";
 import clouds3 from "../../img/clouds3.png";

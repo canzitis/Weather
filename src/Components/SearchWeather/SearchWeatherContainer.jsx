@@ -29,6 +29,8 @@ const SearchWeatherContainer = (props) => {
 const mapStateToProps = (state) => {
   return {
     loadingWeather: state.weatherReducerPage.loadingWeather,
+    errorSearch: state.weatherReducerPage.errorSearch,
+    textErorSearch: state.weatherReducerPage.textErorSearch,
   };
 };
 
