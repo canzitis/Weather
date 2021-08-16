@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { clearloadingWeather } from "../../Redux/weather-reducer";
+import { setClearloadingWeather } from "../../Redux/weather-reducer";
 import WeatherCity from "./WeatherCity";
 
 const WeatherCityContainer = (props) => {
@@ -18,6 +18,6 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { clearloadingWeather })(
+export default connect(mapStateToProps, { setClearloadingWeather })(
   WeatherCityContainer
 );

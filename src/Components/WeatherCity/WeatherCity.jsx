@@ -20,7 +20,7 @@ const WeatherCity = (props) => {
        className={s.back}
         to="/searchWeather"
         onClick={() => {
-          props.clearloadingWeather();
+          props.setClearloadingWeather();
         }}
       >
         <img className={s.backImg} src={backImg} alt="" />

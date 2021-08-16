@@ -22,7 +22,6 @@
 
 
 .backImg{
-    position: fixed;
     left: 940px;
     margin-top: 30px;
     width: 30px;
@@ -31,15 +30,13 @@
 
 .backImg:hover{
     cursor: pointer;
-    width: 40px;
-    height: 40px;
 }
 
 .city h4{
     font-size: 40px;
     color: white;
     margin: 0;
-    margin-top: 90px;
+    margin-top:20px;
     margin-bottom: 20px;
 }
 
@@ -133,7 +130,6 @@
     }
 
     .backImg{
-        position: fixed;
         left: 190px;
         margin-top: 30px;
         width: 30px;
@@ -176,7 +172,6 @@
     }
 
     .backImg{
-        position: fixed;
         left: 164px;
         margin-top: 30px;
         width: 30px;

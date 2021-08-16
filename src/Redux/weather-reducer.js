@@ -35,8 +35,8 @@ const weatherReducer = (state = instalState, action) => {
                 case ERROR_SEARCH:
                     return {
                         ...state,
-                        errorSearch: true,
-                            textErorSearch: 'Город не найден'
+                        errorSearch: action.errorSearch,
+                            textErorSearch: action.textErorSearch
                     }
                     default:
                         return state
@@ -57,9 +57,11 @@ export const setClearloadingWeather = () => {
     }
 }
 
-export const setErrorSearch = () => {
+export const setErrorSearch = (errorSearch, textErorSearch) => {
     return {
-        type: ERROR_SEARCH
+        type: ERROR_SEARCH,
+        errorSearch,
+        textErorSearch
     }
 }
 
@@ -67,27 +69,14 @@ export const setErrorSearch = () => {
 export const getWeather = (searchCity) => {
     return async (dispatch) => {
         const data = await weatherApi.getweather(searchCity)
-        debugger
         if (data.status === 200) {
             dispatch(setStartIndex(data.data))
         } else if (data.response.data.message === 'city not found') {
-            dispatch(setErrorSearch())
+            dispatch(setErrorSearch(true, 'Город не найден'))
         }
     }
 
 }
-
-export const clearloadingWeather = () => {
-    debugger
-    return (dispatch) => {
-        dispatch(setClearloadingWeather())
-    }
-}
-
-
-
-
-
 
 
 export default weatherReducer;

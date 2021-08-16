@@ -1,8 +1,8 @@
 import { Formik } from "formik";
 import s from "./SearchWeatherForm.module.css";
+import backSearch from "../../img/arrow-left.png";
 
 const SearchWeatherForm = (props) => {
-  debugger;
   const validateTextPost = (values) => {
     const errors = {};
     if (!values.searchCity || values.searchCity.length > 200) {
@@ -14,7 +14,9 @@ const SearchWeatherForm = (props) => {
   const addSearch = (values) => {
     props.getWeather(values.searchCity);
   };
-
+  const errorSearch = () => {
+    props.setErrorSearch(false, null);
+  };
   return (
     <Formik
       validate={validateTextPost}
@@ -26,26 +28,35 @@ const SearchWeatherForm = (props) => {
     >
       {({ values, errors, handleChange, handleBlur, handleSubmit }) => (
         <form onSubmit={handleSubmit}>
-          <div>
-            <input
-              placeholder={"Введите город"}
-              className={s.searchFromInput}
-              type="text"
-              name="searchCity"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              values={values.searchCity}
-            />
-            <div className={s.searchBtnBlock}>
-              <button className={s.searchBtn} type="submit">
-                Поиск
-              </button>
+          {props.errorSearch ? (
+            <div>
+              <div className={s.cityUndefined}>{props.textErorSearch}</div>
+              <div className={s.cityUndefinedBack}>
+                <a onClick={errorSearch}>
+                  <h4>Вернуться к поиску</h4>
+                  <img src={backSearch} alt="" />
+                </a>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div>
+              <input
+                placeholder={"Введите город"}
+                className={s.searchFromInput}
+                type="text"
+                name="searchCity"
+                onChange={handleChange}
+                onBlur={handleBlur}
+                values={values.searchCity}
+              />
+              <div className={s.searchBtnBlock}>
+                <button className={s.searchBtn} type="submit">
+                  Поиск
+                </button>
+              </div>
+            </div>
+          )}
           <div className={s.errorsText}>{errors.text && errors.text}</div>
-          <div className={s.cityUndefined}>
-            {props.errorSearch ? props.textErorSearch : null}
-          </div>
         </form>
       )}
     </Formik>

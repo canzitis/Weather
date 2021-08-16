@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { getWeather } from "../../Redux/weather-reducer";
+import { getWeather, setErrorSearch } from "../../Redux/weather-reducer";
 import SearchWeather from "./SearchWeather";
 import s from "./SearchWeather.module.css";
 import leaflet1 from "../../img/leaflet1.png";
@@ -26,6 +26,7 @@ const SearchWeatherContainer = (props) => {
     </div>
   );
 };
+
 const mapStateToProps = (state) => {
   return {
     loadingWeather: state.weatherReducerPage.loadingWeather,
@@ -34,4 +35,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { getWeather })(SearchWeatherContainer);
+export default connect(mapStateToProps, { getWeather,setErrorSearch })(SearchWeatherContainer);
