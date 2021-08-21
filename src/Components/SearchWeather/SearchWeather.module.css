@@ -88,6 +88,7 @@
   left: 1150px;
   top: 400px;
 }
+
 .leaflet5{
   position: absolute;
   left: 0;
@@ -113,6 +114,69 @@
 
 .contacts img{
   width: 23px;
+}
+
+
+@media(max-width:1890px){
+  .leaflet6{
+    width: 500px;
+    position: absolute;
+    left: 1300px;
+    top: 0px;
+  }
+
+  .leaflet4{
+    position: absolute;
+    left: 1050px;
+    top: 400px;
+  }
+
+}
+
+@media(max-width:1825px){
+  .leaflet6{
+    width: 500px;
+    position: absolute;
+    left: 1200px;
+    top: 0px;
+  }
+
+  .leaflet4{
+    position: absolute;
+    left: 950px;
+    top: 400px;
+  }
+
+}
+
+@media(max-width:1500px){
+  .leaflet1{
+    display: none;
+  }
+  
+  .leaflet2{
+    display: none;
+  }
+  
+  
+  .leaflet3{ 
+    display: none;
+  }
+  
+  
+  .leaflet4{
+    display: none;
+  }
+  
+  
+  .leaflet5{
+    display: none;
+  }
+  
+  .leaflet6{
+    display: none;
+  }
+
 }
 
 
