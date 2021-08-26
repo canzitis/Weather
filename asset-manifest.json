@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Weather/static/css/main.1eed3cd2.chunk.css",
+    "main.css": "/Weather/static/css/main.c5554cf3.chunk.css",
     "main.js": "/Weather/static/js/main.efffe34d.chunk.js",
     "main.js.map": "/Weather/static/js/main.efffe34d.chunk.js.map",
     "runtime-main.js": "/Weather/static/js/runtime-main.691ab1d3.js",
@@ -10,7 +10,7 @@
     "static/js/3.4ba493ec.chunk.js": "/Weather/static/js/3.4ba493ec.chunk.js",
     "static/js/3.4ba493ec.chunk.js.map": "/Weather/static/js/3.4ba493ec.chunk.js.map",
     "index.html": "/Weather/index.html",
-    "static/css/main.1eed3cd2.chunk.css.map": "/Weather/static/css/main.1eed3cd2.chunk.css.map",
+    "static/css/main.c5554cf3.chunk.css.map": "/Weather/static/css/main.c5554cf3.chunk.css.map",
     "static/js/2.7e109d64.chunk.js.LICENSE.txt": "/Weather/static/js/2.7e109d64.chunk.js.LICENSE.txt",
     "static/media/WeatherCity.module.css": "/Weather/static/media/Bitmap.62be2e13.png",
     "static/media/clouds1.8f14c9c9.png": "/Weather/static/media/clouds1.8f14c9c9.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.691ab1d3.js",
     "static/js/2.7e109d64.chunk.js",
-    "static/css/main.1eed3cd2.chunk.css",
+    "static/css/main.c5554cf3.chunk.css",
     "static/js/main.efffe34d.chunk.js"
   ]
 }
