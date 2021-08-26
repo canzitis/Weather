@@ -30,6 +30,8 @@
 
 .backImg:hover{
     cursor: pointer;
+    transform: scale(1.1);
+    transition: transform .5s
 }
 
 .city h4{
